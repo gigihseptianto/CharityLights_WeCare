@@ -25,6 +25,29 @@
 		background-position: center; 
 		color: $cl-white;
 	}
+	//app promo phiruntrophy
+	&.app-promo{
+		background-color: rgba($cl-dark-purple, .5);
+		background:
+		linear-gradient(
+			rgba(darken($cl-green, 75%), 0.6), 
+			rgba(darken($cl-green, 75%), 0.6)
+			),
+		url('../img/jogger.jpg');
+		background-size: cover;
+		background-position: center; 
+		color: $cl-white;
+	}
+	//footer
+	&.footer {
+		background-color: $cl-dark-purple;
+	}
+	&.copyright {
+		font-size: $small;
+		color: $cl-white;
+		background-color: $cl-dark-dark-purple;
+		font-weight: $medium;
+	}
 }
 
 //patients
@@ -127,11 +150,4 @@
 			color: $white;
 		}
 	}
-}
-
-//footer
-.footer {
-	font-size: $small;
-	color: $cl-white;
-	background-color: $cl-black;
 }

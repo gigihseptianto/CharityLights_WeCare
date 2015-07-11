@@ -9246,6 +9246,19 @@ input:not([type=submit]):not([type=file]) {
   background-size: cover;
   background-position: center;
   color: #F7F5F5; }
+.jumbotron.app-promo {
+  background-color: rgba(61, 59, 71, 0.5);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/jogger.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #F7F5F5; }
+.jumbotron.footer {
+  background-color: #3D3B47; }
+.jumbotron.copyright {
+  font-size: 85%;
+  color: #F7F5F5;
+  background-color: #2A2830;
+  font-weight: 500; }
 
 .patient-img {
   background-color: #57e291;
@@ -9361,11 +9374,6 @@ input:not([type=submit]):not([type=file]) {
       padding: 1em 1em;
       text-decoration: none;
       color: #F8F8F8; }
-
-.footer {
-  font-size: 85%;
-  color: #F7F5F5;
-  background-color: #434B5B; }
 
 html {
   -ms-text-size-adjust: 100%;
