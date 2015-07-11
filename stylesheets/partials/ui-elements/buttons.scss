@@ -1,0 +1,91 @@
+@import "base";
+button {
+	padding: 0;
+	margin: 0;
+}
+.btn {
+	border-color: none;
+	padding: 14px 32px 14px 32px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.25s;
+	-webkit-transition-property: background-color, border, color, -webkit-box-shadow, -moz-box-shadow, box-shadow;
+	-webkit-transition-timing-function: ease;
+	@include rounded-maximum;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	transition-delay: 0s;
+	transition-duration: 0.25s;
+	transition-property: background-color, border, color;
+	transition-timing-function: ease;
+	word-wrap: break-word;
+	&:focus {
+		outline: none;
+	}
+	&.primary {
+		border: 2px $cl-magenta solid;
+		background-color: $cl-magenta;
+		color: $white;
+		&:hover {
+			background-color: rgba(white, 0);
+			cursor: pointer;
+			color: $cl-magenta;
+		}
+		&:active {
+			background-color: rgba(white, 0);
+			@include button-box-shadow(0, 1px, 0, rgba($black, .3), 0, 0, 0, rgba(#fff, 0 ));
+			color: $cl-magenta;
+		}
+	}
+	&.icon-left {
+		padding-left: 12px;
+		span {
+			padding-left: 32px;
+			&.arrow {
+				background: url(../img/icon_prev.svg) no-repeat 0 50%;
+			}
+		}
+	}
+	&.icon-right {
+		padding-right: 12px;
+		span {
+			padding-right: 32px;
+			&.arrow {
+				background: url(../img/icon_next.svg) no-repeat 100% 50%;
+			}
+			&.caret-down {
+				background: url(../img/icon_arrow_down.svg) no-repeat 100% 50%;	
+			}
+		}
+	}
+	&.full-width {
+		display: block;
+		text-align: center;
+		line-height: $base-line-height;
+		min-width: calc(100% - 1em);
+	}
+	&.special-readmore {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		padding: 28px 32px 0px 32px;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		color: $cl-green;
+		text-align: center;
+		font-size: $small;
+		line-height: $base-line-height;
+		min-width: calc(100% - 1em);
+		background: linear-gradient(rgba(white, 0.8), rgba(white, 1));
+		&:hover {
+			cursor: pointer;
+			color: $cl-magenta;
+		}
+		&:active {
+			color: $cl-magenta;
+			@include button-box-shadow(0, 0, 0, rgba(black, 0), 0, 0, 0, rgba(white, 0 ));
+		}
+	}
+}

@@ -1,0 +1,137 @@
+@import "base";
+//navbar
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 64px;
+    height: 64px;
+    padding-top: 0;
+}
+.cl-logo {
+	color: $cl-white;
+	font-size: $h3;
+}
+
+//jumbotron
+.jumbotron {
+	&.header{
+		background-color: rgba($black, .5);
+		background:
+		linear-gradient(
+			rgba($black, 0.45), 
+			rgba($black, 0.45)
+			),
+		url('../img/kids1.jpg');
+		background-size: cover;
+		background-position: center; 
+		color: $cl-white;
+	}
+}
+
+//patients
+.patient-img {
+	background-color: darken($cl-green, 1);
+	min-width:100%;
+	padding-bottom:56%;
+	border-radius: 2px 2px 0 0; 
+}
+.patient-summary {
+	position: relative;
+}
+
+//donations
+.donation-progress {
+	margin-top: 32px;
+	margin-bottom: 0;
+}
+.donation-summary {
+	margin-top: 8px;
+	margin-bottom: 8px;	
+	.to-go, .raised, .donator {
+		font-weight: bold;
+	}
+	.donation-label {
+		display: block;
+		white-space: nowrap;
+	}
+}
+//alert
+.alert {
+	position: fixed;
+	color: rgba($secondary-color, 1);
+	@include rounded();
+	max-width: 350px;
+	top: 10px;
+	right: 10px;
+	background: white;
+	display: none;
+	@include button-box-shadow(0, 0, 0, rgba(#fff, 0 ), 0, 1px, 3px, rgba(0, 0, 0, 0.4));
+	&.visible {
+		display: block !important;
+	}
+	.close {
+		display: block;
+		position: absolute;
+		top: calc(50% - 11px);
+		right: 1em;
+		@include square-size(22px);
+		background: url(../img/icon_float_close.svg) no-repeat;
+		background-size: 100%;
+	}
+	.content {
+		position: relative;
+		font-size: $h3;
+		text-align: left;
+		padding: 1em 3em 1em 1em;
+		@include wrap-text();
+	}
+}
+//widget
+.widget {
+	@include rounded();
+	background-color: white;
+	border: solid thin #E2E5EB;
+	@include button-box-shadow(0, 0, 0, rgba(#fff, 0 ), 0, 1px, 0, rgba(#8E95BB, .5));
+	padding: 0;
+	overflow: hidden;
+	.title {
+		display: block;
+		font-size: $h3;
+		font-weight: $demi-bold;
+		text-transform: uppercase;
+		border-bottom: solid thin $grey;
+		padding: 0.5em 1em;
+		letter-spacing: 1px;
+	}
+	.content {
+		.row {
+			@include vendor-prefix(background-size, cover);
+			@include vendor-prefix(background-repeat, no-repeat);
+			@include vendor-prefix(background-position, center);
+			border-bottom: solid thin $grey;
+		}
+		text-transform: uppercase;
+		letter-spacing: 0.8px;
+		font-size: $base-font-size;
+		font-weight: $medium;
+		color: $white;
+		.col {
+			background-color: rgba($black, .5);
+			&:hover {
+				background-color: rgba($black, .2);
+			}
+		}
+		a {
+			display:block;
+			padding: 1em 1em;
+			text-decoration: none;
+			color: $white;
+		}
+	}
+}
+
+//footer
+.footer {
+	font-size: $small;
+	color: $cl-white;
+	background-color: $cl-black;
+}

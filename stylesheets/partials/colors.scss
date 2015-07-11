@@ -1,0 +1,29 @@
+//Named Colors
+$cl-blue: #3A99D8;
+$cl-magenta: #FB4B5E;
+$cl-green: #5BE394;
+$cl-black: #434B5B; //blue-ish black
+$cl-white: #F7F5F5;
+$grey: #D8D8D8;
+$light-light-grey: #FCFDFD;
+$light-grey: #F7F9FA;
+$white: #F8F8F8;
+$black: #3D3B47;
+
+//Color Hierarchy
+$primary-color: $cl-green;
+$secondary-color: $cl-blue;
+$light-color: $cl-white;
+$dark-color: $cl-black;
+$neutral-color: $light-light-grey;
+
+//Functional Colors
+//$btn-shadow-primary: $dark-orange;
+//$btn-shadow-secondary: $dark-dark-purple;
+$bg-disable: $light-grey;
+$text-disable: $grey;
+$warning: $cl-magenta;
+$valid: $cl-green;
+
+//Text Colors
+$text-color: $cl-black;
