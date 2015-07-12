@@ -1,4 +1,24 @@
 @import "base";
+//modal
+.modal-dialog {
+	margin-top: 104px;
+}
+.modal-content {
+	@include rounded();
+}
+.modal-title { 
+   font-family:'blogger_sansmedium_italic', Fallback, sans-serif;
+   text-align: center;
+}
+.modal-header, .modal-footer {
+   border: none;
+   text-align: center;
+}
+@media (min-width: 768px) {
+   .modal-sm {
+     width: 400px;
+   }
+}
 //navbar
 .navbar-brand,
 .navbar-nav li a {
@@ -6,11 +26,28 @@
     height: 64px;
     padding-top: 0;
 }
+.navbar-default .navbar-toggle {
+	color: $cl-white;
+	letter-spacing: 0.5;
+	font-weight: $medium;
+	text-transform: uppercase;
+	padding: 8px 10px;
+	&:hover, &:focus {
+		border-color: $cl-green;
+		background: $cl-green;
+		color: $cl-blue;
+	}
+	&:focus {
+		border-color: $cl-green;
+		color: $cl-white;
+		background: none;
+	}
+}
 .cl-logo {
 	color: $cl-white;
 	font-size: $h3;
+	display: inline-block;
 }
-
 //jumbotron
 .jumbotron {
 	&.header{
@@ -24,6 +61,12 @@
 		background-size: cover;
 		background-position: center; 
 		color: $cl-white;
+		min-height: 50vh;
+	}
+	//how it works
+	&.how-it-works{
+		background-color: $cl-green;
+		min-height: 50vh;
 	}
 	//app promo phiruntrophy
 	&.app-promo{
@@ -37,14 +80,33 @@
 		background-size: cover;
 		background-position: center; 
 		color: $cl-white;
+		min-height: 80vh;
 	}
 	//footer
 	&.footer {
 		background-color: $cl-dark-purple;
+		.title {
+			text-transform: uppercase;
+			color: rgba($cl-white,.5);
+			//font-size: $h4;
+			font-weight: bold;
+		}
+		.nav li a {
+			padding-left: 8px;
+			color: $cl-white;
+			&:visited {
+				color: $cl-white;
+				background-color: $cl-dark-purple;
+			}
+			&:hover, &:active {
+				background-color: $cl-dark-purple;
+				color: $cl-green;
+			}
+		}
 	}
 	&.copyright {
 		font-size: $small;
-		color: $cl-white;
+		color: rgba($cl-white,.5);
 		background-color: $cl-dark-dark-purple;
 		font-weight: $medium;
 	}

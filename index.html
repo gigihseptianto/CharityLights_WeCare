@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <title>WeCare ID</title>
   <!-- Bootstrap core CSS -->
   <link href="stylesheets/main.css" rel="stylesheet">
@@ -24,8 +25,8 @@
           <span>Menu</span>
         </button>
         <a class="navbar-brand" href="#">
-          <!-- <img alt="CharityLights" src="img/logo_charitylights@2x.png" height="36px"> -->
-          <span class="cl-logo"><span style="font-family:'blogger_sanslight_italic', Fallback, sans-serif;">Charity</span><span style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;">Lights</span></span>
+          <img alt="CharityLights" src="img/logo_charitylights@2x.png" style="display:inline-block;vertical-align:middle;height:32px;margin-bottom:9px;">
+          <span class="cl-logo hidden-md hidden-sm hidden-xs"><span style="font-family:'blogger_sanslight_italic', Fallback, sans-serif;">Charity</span><span style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;">Lights</span></span>
         </a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,12 +36,43 @@
           <li><a href="#">Meet the Patients</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="#" data-toggle="modal" data-target=".loginmodal">Login</a></li>
           <li><a href="#">Sign Up</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
   </nav>
+<!-- Login Modal -->
+<div class="modal fade loginmodal" role="dialog" aria-labelledby="loginmodal">
+  <div class="modal-dialog  modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="loginmodal">Log In</h2>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <form class="row">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">Email</span>
+              <input type="text" class="form-control" placeholder="e.g., doctor.who@mail.com" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon2">Password</span>
+              <input type="password" class="form-control" placeholder="e.g., ••••••••••••" aria-describedby="basic-addon2">
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary full-width">Log In Now</button>
+        <br>
+        <a class="btn-link">Forgot Password?</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+</div><!-- /.modal -->
+<!-- /Login Modal -->
   <!--Section Title-->
   <div class="jumbotron header">
     <div class="container text-center">
@@ -172,50 +204,63 @@
         </div>
         <!--/Section Patients-->
         <!--Section How it Works-->
-        <div class="jumbotron">
+        <div class="jumbotron how-it-works">
           <div class="container text-center">
             <h2 class="section-title">How It Works</h2>
+            <div class="col-md-4">
+            <img alt="Medical Partner" src="img/ic_local_hospital@2x.png" height="48px">
+            <h3>Medical Partner</h3>
+            <p class="text-left">We work with notable medical partners across the region to find patients in need.</p>
+            </div>
+            <div class="col-md-4">
+            <img alt="Approval" src="img/ic_approve@2x.png" height="48px">
+            <h3>Approval</h3>
+            <p class="text-left">We review the patients, then post their story on the website.</p>
+            </div>
+            <div class="col-md-4">
+            <img alt="Donate" src="img/ic_donate@2x.png" height="48px">
+            <h3>Donate</h3>
+            <p class="text-left">You can read patient's story and donate as little as 5$ to help fund their healthcare.</p>
+            </div>
           </div>
         </div>
         <!--/Section How it Works-->
-        <!--Section How it Works-->
+        <!--Section App Promo-->
         <div class="jumbotron app-promo">
           <div class="container text-center">
             <h2 class="section-title">Get Moving</h2>
             <p>Run, walk, or cycling to engage more people and raise more fung for patients with:</p>
-            <span style="font-family:'blogger_sansbold_italic'">phiruntrophy</span>
+            <h2 style="font-family:'blogger_sansbold_italic'" class="vertical-center">phiruntrophy</h2>
+            <a class="btn primary">Download PHIRUNTROPHY</a>
           </div>
-            <div class="text-center">
-              <a class="btn primary">Download PHIRUNTROPHY</a>
-            </div>
         </div>
-        <!--/Section How it Works-->
+        <!--/Section App Promo-->
         <!--Section Footer-->
         <div class="jumbotron footer">
           <div class="container">
-            <div class="col-md-3">logo</div>
-            <div class="col-md-3">
-            About
+            <div class="col-md-6"><h4><span style="font-family:'blogger_sanslight_italic', Fallback, sans-serif;">We</span><span style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;">Care</span> ID</h4></div>
+            <div class="col-md-2">
+            <span class="title">About</span>
             <ul class="nav">
               <li><a href="#cl">CharityLights</a></li>
               <li><a href="#blog">Blog</a></li>
               <li><a href="#privacy">Privacy & Policy</a></li>
             </ul>
             </div>
-            <div class="col-md-3">
-            Learn More
-            <ul>
-              <li>CharityLights</li>
-              <li>Blog</li>
-              <li>Privacy & Policy</li>
+            <div class="col-md-2">
+            <span class="title">Learn More</span>
+            <ul class="nav">
+              <li><a href="#transparency">Transparency</a></li>
+              <li><a href="#involve">Get Involved</a></li>
+              <li><a href="#faq">FAQ</a></li>
             </ul>
             </div>
-            <div class="col-md-3">
-            Get in Touch
-            <ul>
-              <li>CharityLights</li>
-              <li>Blog</li>
-              <li>Privacy & Policy</li>
+            <div class="col-md-2">
+            <span class="title">Get in Touch</span>
+            <ul class="nav">
+              <li><a href="#twitter">Twitter</a></li>
+              <li><a href="#fb">Facebook</a></li>
+              <li><a href="#contact">Contact Us</a></li>
             </ul>
             </div>
           </div>

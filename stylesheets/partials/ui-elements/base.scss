@@ -1,6 +1,6 @@
 //base for ui-elements
 
-@mixin rounded($radius: 3px) {
+@mixin rounded($radius: 4px) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   border-radius: $radius;
@@ -24,8 +24,8 @@
 }
 
 .vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
+  height: auto;
+  //min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

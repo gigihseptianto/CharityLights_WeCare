@@ -60,6 +60,9 @@ p {
 		margin-bottom: 1.5em;	
 	}
 }
+.jumbotron p {
+	font-size: $h3;
+}
 //blogpost
 article {
 	small {
@@ -102,11 +105,16 @@ article {
 }
 //inline-link
 a {
-	&.link {
-		color: $primary-color;
+	&.btn-link {
+		color: $cl-green;
 		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: $medium;
+		letter-spacing: 0.5;
 		&:hover {
-			text-decoration: underline;
+			cursor: pointer;
+			color: $cl-magenta;
+			text-decoration: none;
 		}
 	}
 }

@@ -1,11 +1,23 @@
 @import "base";
-.form-title {
-   display: block;
-   font-size: $h3;
-   font-weight: $medium;
-}
 .form-section {
    padding-bottom: 1em;
+}
+.input-group {
+   width: 100%;
+   margin-bottom: 16px;
+   background: white;
+   border: 1px solid #EAE0E0;
+   @include rounded();
+   @include button-box-shadow(0, 0, 0, rgba(#fff, 0 ), 0, 1px, 0, rgba(#9894A9, .5));
+   &:hover {
+      border: 1px solid $cl-green;
+   }
+   &:focus {
+      border: 1px solid $cl-green;
+      outline: none;
+      @include button-box-shadow(0, 1px, 0, rgba(#8E95BB, .2 ), 0, 0, 0, rgba(#fff, 0));
+      cursor: text;
+   }
 }
 //text input
 label {
@@ -31,24 +43,15 @@ input:not([type=submit]):not([type=file]) {
    width: 100%;
    letter-spacing: 0.5px;
    font-weight: $medium;
-   background: white;
-   border: 1px solid #E2E5EB;
+   border: none;
    @include rounded();
-   @include button-box-shadow(0, 0, 0, rgba(#fff, 0 ), 0, 1px, 0, rgba(#8E95BB, .5));
-   padding: 8px 12px;
+   @include button-box-shadow(0, 0, 0, rgba(white, 0 ), 0, 0, 0, rgba(white, 0));
+   padding: 16px 12px;
+   min-height: 48px;
    font-size: $base-font-size;
    font-family: $base-font-family;
    cursor: pointer;
    display: block;
-   &:hover {
-      border: 1px solid #8E95BB;
-   }
-   &:focus {
-      border: 1px solid $primary-color;
-      outline: none;
-      @include button-box-shadow(0, 1px, 0, rgba(#8E95BB, .2 ), 0, 0, 0, rgba(#fff, 0));
-      cursor: text;
-   }
    &.warning {
       border: 1px solid $warning;
       color: $warning;
@@ -67,6 +70,17 @@ input:not([type=submit]):not([type=file]) {
       border: none;
    }
 }
+//label
+.input-group-addon {
+  padding: 6px 12px;
+  width: 90px;
+  font-weight: $medium;
+  color: $cl-black;
+  text-align: left;
+  background-color: white;
+   border: none;
+}
+
 //dropdown
 .dropdown {
    display: inline-block;
