@@ -62,6 +62,7 @@ p {
 }
 .jumbotron p {
 	font-size: $h3;
+	letter-spacing: 0.8px;
 }
 //blogpost
 article {
@@ -110,7 +111,7 @@ a {
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: $medium;
-		letter-spacing: 0.5;
+		letter-spacing: 0.5px;
 		&:hover {
 			cursor: pointer;
 			color: $cl-magenta;

@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+  include ./includes/head.jade
+  body
+    //Navbar
+    include ./includes/navbar.jade
+    //Login Modal
+    include ./includes/login-modal.jade
+    //CONTENTS
+    //Section Title
+    .jumbotron.header
+      .container.text-center
+        h1
+          span(style="font-family:'blogger_sanslight_italic', Fallback, sans-serif;") We
+          span(style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;") Care
+          |  ID
+        p Bringing healthcare to every person on the planet
+    //Section Patients
+    .jumbotron
+      .container
+        .row.text-center
+          h2.section-title Help The Patients
+          p You can make all the differences by donating as little as $5</p>
+        .row
+          include ./includes/patient-card.jade
+          include ./includes/patient-card.jade
+          include ./includes/patient-card.jade
+        .text-center: a.btn.primary See All The Patients
+    //Section How it Works
+    .jumbotron.how-it-works
+      .container.text-center
+        h2.section-title How It Works
+        .col-md-4
+          img(alt="Medical Partner", src="img/ic_local_hospital@2x.png", height="48px")
+          h3 Medical Partner
+          p.text-left We work with notable medical partners across the region to find patients in need.
+        .col-md-4
+          img(alt="Approval", src="img/ic_approve@2x.png", height="48px")
+          h3 Approval
+          p.text-left We review the patients, then post their story on the website.
+        .col-md-4
+          img(alt="Donate", src="img/ic_donate@2x.png", height="48px")
+          h3 Donate
+          p.text-left You can read patient's story and donate as little as 5$ to help fund their healthcare.
+    //Section App Promo
+    .jumbotron.app-promo
+      .container.text-center
+        h2.section-title Get Moving
+        p Run, walk, or cycling to engage more people and raise more fung for patients with:
+        h2.vertical-center(style="font-family:'blogger_sansbold_italic'") phiruntrophy
+        a.btn.primary Download PHIRUNTROPHY
+    //Section Footer
+    include ./includes/footer.jade

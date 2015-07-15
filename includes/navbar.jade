@@ -1,0 +1,20 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar-collapse-1", aria-expanded="false")
+        span.sr-only Toggle Navigation
+        span Menu
+      a.navbar-brand(href="#")
+        img(alt="CharityLights", src="img/logo_charitylights@2x.png", style="display:inline-block;vertical-align:middle;height:32px;margin-bottom:9px;")
+        span.cl-logo.hidden-md.hidden-sm.hidden-xs
+          span(style="font-family:'blogger_sanslight_italic', Fallback, sans-serif;") Charity
+          span(style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;") Lights
+    //Nav links toggle
+    .collapse.navbar-collapse#navbar-collapse-1
+      ul.nav.navbar-nav.navbar-right
+        li: a(href="#") Home
+        li: a(href="#") Meet the Patients
+        li: a(href="#") About Us
+        li: a(href="#") Contact
+        li: a(href="#", data-toggle="modal" data-target=".loginmodal") Login
+        li: a(href="#") Sign Up
