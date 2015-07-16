@@ -1,5 +1,6 @@
 doctype html
 html(lang="en")
+  - var pagetitle = "WeCare ID"
   include ./includes/head.jade
   body
     //Navbar
@@ -21,7 +22,7 @@ html(lang="en")
         .row.text-center
           h2.section-title Help The Patients
           p You can make all the differences by donating as little as $5</p>
-        .row
+        .row.patient-row
           include ./includes/patient-card.jade
           include ./includes/patient-card.jade
           include ./includes/patient-card.jade

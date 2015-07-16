@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+  - var pagetitle = "WeCare ID – All Patients"
+  include ./includes/head.jade
+  body
+    //Navbar
+    include ./includes/navbar.jade
+    //Login Modal
+    include ./includes/login-modal.jade
+    //CONTENTS
+    //Section Patients
+    .jumbotron
+      .container
+        .row.text-center
+          h2.section-title View All Patients
+        .row.patient-row
+          include ./includes/patient-card.jade
+          include ./includes/patient-card.jade
+          include ./includes/patient-card.jade
+        .row.patient-row
+          include ./includes/patient-card.jade
+          include ./includes/patient-card.jade
+          include ./includes/patient-card.jade
+        .row.patient-row
+          include ./includes/patient-card.jade
+          include ./includes/patient-card.jade
+          include ./includes/patient-card.jade
+        .text-center: a.btn.primary View More Patients
+    //Section Footer
+    include ./includes/footer.jade

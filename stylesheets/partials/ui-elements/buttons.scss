@@ -1,11 +1,60 @@
 @import "base";
+//reset button
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
 button {
-	padding: 0;
-	margin: 0;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
 }
-.btn {
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Make `a` like a button */
+[role="button"] {
+    color: inherit;
+    cursor: default;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: pre;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"], button, .btn {
 	border-color: none;
 	padding: 14px 32px 14px 32px;
+	//max-height: 48px;
+	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-webkit-transition-delay: 0s;
 	-webkit-transition-duration: 0.25s;
@@ -25,15 +74,15 @@ button {
 	}
 	&.primary {
 		border: 2px $cl-magenta solid;
-		background-color: $cl-magenta;
+		background: $cl-magenta;
 		color: $white;
 		&:hover {
-			background-color: rgba(white, 0);
+			background: none;
 			cursor: pointer;
 			color: $cl-magenta;
 		}
 		&:active {
-			background-color: rgba(white, 0);
+			background: none;
 			@include button-box-shadow(0, 1px, 0, rgba($black, .3), 0, 0, 0, rgba(#fff, 0 ));
 			color: $cl-magenta;
 		}
@@ -62,8 +111,20 @@ button {
 	&.full-width {
 		display: block;
 		text-align: center;
-		line-height: $base-line-height;
-		min-width: calc(100% - 1em);
+		line-height: 1;
+		min-width: 100%;
+	}
+	&.btn-dropdown {
+		border-radius: 2px;
+		text-transform: none;
+		color: $cl-black;
+		&:hover {
+			color: $cl-green;
+		}
+		&:active {
+			@include button-box-shadow(0, 0, 0, $cl-white, 0, 0, 0, $cl-white);
+			color: $cl-magenta;
+		}
 	}
 	&.special-readmore {
 		display: block;

@@ -1,0 +1,80 @@
+doctype html
+html(lang="en")
+  - var pagetitle = "WeCare ID – [patient_name]"
+  include ./includes/head.jade
+  body
+    //Navbar
+    include ./includes/navbar.jade
+    //Login Modal
+    include ./includes/login-modal.jade
+    //CONTENTS
+    //Section Header
+    .jumbotron.header(style="padding-bottom:0px;")
+      .container
+        .col-md-3
+          .panel.col-md-12
+            .row.patient-img-full
+        .col-md-9
+          .row: .col-md-12: h1.patient-name Indah
+          .row
+            .col-md-12.col-xs-12
+              .donation-summary.row
+                .col-md-4.col-xs-6
+                  h3.raised Rp. 999,999,-
+                  p.donation-label raised
+                .col-md-4.col-xs-6
+                  h3.to-go Rp. 999,999,-
+                  p.donation-label to go
+                .col-md-4.col-xs-12
+                  h3.donator 1,999
+                  p.donation-label donator
+           form.row
+            .col-md-6.col-xs-12
+              .input-group
+                //span.input-group-addon#amount $
+                .input-group-btn
+                  button.btn.btn-dropdown.dropdown-toggle(type="button", data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Rp. 
+                    span.caret
+                  ul.dropdown-menu
+                    li: a(href="#") Rp.
+                    li: a(href="#") $
+                input.form-control(type="text", placeholder="e.g., 50,000", aria-describedby="amount")
+            .col-md-6.col-xs-12     
+              button.btn.primary(type="submit") Donate Now
+        .col-md-12      
+          .donation-progress.progress
+            .progress-bar(role="progressbar", aria-valuenow="60", aria-valuemin="0", aria-valuemax="100", style="width: 60%;", title="60%")
+              span.sr-only 60% Complete
+    //Section Story
+    .jumbotron: .container
+      .col-md-8
+        .panel.col-md-12
+          .patient-story
+            include ./includes/patient-story-example.jade
+            .text-center: h4: a.btn-link(href="http://example.com") Share this story  
+      .col-md-4
+        .panel.col-md-12
+          h3.widget-title(style="margin-bottom:1em;font-family:'blogger_sansmedium_italic', Fallback, sans-serif;") Funded by
+          .row.donator-grid
+            .col-md-3.col-xs-3: a(href="http://user1"): .container.donator-avatar
+            .col-md-3.col-xs-3: a(href="http://user2"): .container.donator-avatar
+            .col-md-3.col-xs-3: a(href="http://user3"): .container.donator-avatar
+            .col-md-3.col-xs-3: a(href="http://user4"): .container.donator-avatar
+          .row.donator-grid
+            .col-md-3.col-xs-3: a(href="http://user5"): .container.donator-avatar
+            .col-md-3.col-xs-3: a(href="http://user6"): .container.donator-avatar
+            .col-md-3.col-xs-3: a(href="http://user7"): .container.donator-avatar
+      .col-md-4   
+        .panel.col-md-12
+          h3.widget-title(style="margin-bottom:1em;font-family:'blogger_sansmedium_italic', Fallback, sans-serif;") Hospital Information
+    //Section Related Patients
+    .jumbotron: .container
+      .row.text-center
+        h2.section-title Other Patients
+      .row.patient-row
+        include ./includes/patient-card.jade
+        include ./includes/patient-card.jade
+        include ./includes/patient-card.jade
+      .text-center: a.btn.primary Meet All Patients
+    //Section Footer
+    include ./includes/footer.jade

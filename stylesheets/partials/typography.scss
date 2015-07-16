@@ -31,9 +31,19 @@ $base-line-height: 1.75;
 
 h1 {
   font-family: blogger_sansregular, Fallback, sans-serif;
+  &.patient-name {
+  	margin-top: 0px;
+  	margin-bottom: 0px;
+  	line-height:1;
+  }
 }
 .section-title {
   font-family: blogger_sansmedium_italic, Fallback, sans-serif;
+  margin-bottom: 1em;
+  & + p {
+  	margin-bottom: 30px;
+  	margin-top: -25px;
+  }
 }
 
 //sizing

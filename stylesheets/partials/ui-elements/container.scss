@@ -31,6 +31,7 @@
 	letter-spacing: 0.5;
 	font-weight: $medium;
 	text-transform: uppercase;
+	margin-top:16px;
 	padding: 8px 10px;
 	&:hover, &:focus {
 		border-color: $cl-green;
@@ -121,10 +122,29 @@
 	padding-bottom:56%;
 	border-radius: 2px 2px 0 0; 
 }
+.patient-img-full {
+	background-color: darken($cl-black, 1);
+	min-width:100%;
+	padding-bottom:100%;
+	border-radius: 2px; 
+}
 .patient-summary {
 	position: relative;
 }
-
+.patient-story {
+	padding-top:20px;
+	padding-bottom:10px;
+	p{
+		font-size:$h4;
+		font-weight:$ultra-light;
+		letter-spacing: 0.2px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.patient-row {
+	margin-bottom:2em;
+}
 //donations
 .donation-progress {
 	margin-top: 32px;
@@ -135,11 +155,22 @@
 	margin-bottom: 8px;	
 	.to-go, .raised, .donator {
 		font-weight: bold;
+		margin-bottom: 0px;
 	}
 	.donation-label {
 		display: block;
 		white-space: nowrap;
+		margin-bottom: 8px;
+		margin-top: 0px;
 	}
+}
+.donator-grid {
+	margin-bottom:1em;
+}
+.donator-avatar {
+	background:$cl-black;
+	padding-bottom:100%;
+	border-radius:2px;
 }
 //alert
 .alert {
