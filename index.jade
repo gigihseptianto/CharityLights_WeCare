@@ -1,7 +1,8 @@
 doctype html
 html(lang="en")
-  - var pagetitle = "WeCare ID"
-  include ./includes/head.jade
+  head
+    - var pagetitle = "WeCare ID"
+    include ./includes/head.jade
   body
     //Navbar
     include ./includes/navbar.jade
@@ -35,11 +36,11 @@ html(lang="en")
           img(alt="Medical Partner", src="img/ic_local_hospital@2x.png", height="114px")
           h3 Medical Partner
           p We work with notable medical partners across the region to find patients in need.
-        .col-md-4.col-sm-4.col-xs-6
+        .col-md-4.col-sm-4.col-xs-12
           img(alt="Approval", src="img/ic_approve@2x.png", height="114px")
           h3 Approval
           p We review the patients, then post their story on the website.
-        .col-md-4.col-sm-4.col-xs-6
+        .col-md-4.col-sm-4.col-xs-12
           img(alt="Donate", src="img/ic_donate@2x.png", height="114px")
           h3 Donate
           p You can read patient's story and donate as little as 5$ to help fund their healthcare.
@@ -48,8 +49,8 @@ html(lang="en")
       .container.text-center
         h2.section-title Get Moving
         p Run, walk, or cycling to engage more people and raise more fund for patients with:
-        span(style="font-size:400%;margin-top:2em;margin-bottom:2em;display:block;")
-          img(alt="phiruntrophy", src="img/logo_phiruntrophy@2x.png", style="display:inline-block;height:52px;")
+        span(style="font-size:400%;font-size:4vmax;margin-top:2em;margin-bottom:2em;display:block;")
+          img(alt="phiruntrophy", src="img/logo_phiruntrophy@2x.png", style="display:inline-block;height:52px;height:4vmax;")
           span(style="font-family:'blogger_sansbold_italic', Fallback, sans-serif;display:inline-block;") &nbsp;phiruntrophy
         a.btn.primary Download PHIRUNTROPHY
     //Section Footer

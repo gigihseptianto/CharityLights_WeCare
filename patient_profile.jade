@@ -1,7 +1,9 @@
 doctype html
 html(lang="en")
-  - var pagetitle = "WeCare ID – [patient_name]"
-  include ./includes/head.jade
+  head
+    - var pagetitle = "WeCare ID – [patient_name]"
+    include ./includes/head.jade
+    include ./includes/gmaps-api.jade
   body
     //Navbar
     include ./includes/navbar.jade
@@ -15,7 +17,7 @@ html(lang="en")
           .panel.col-md-12
             .row.patient-img-full
         .col-md-9
-          .row: .col-md-12: h1.patient-name Indah
+          .row: .col-md-12: h1.patient-name Carter Casey
           .row
             .col-md-12.col-xs-12
               .donation-summary.row
@@ -66,6 +68,18 @@ html(lang="en")
       .col-md-4   
         .panel.col-md-12
           h3.widget-title Hospital Information
+          .row.hospital-map#hospital-map(data-lat="38.6378445", data-long="-90.2650156", data-hospital-name="St. Louis Children’s Hospital")
+          address#hospital-address
+            strong St. Louis Children’s Hospital
+            br
+            | 1 Childrens Pl
+            br
+            | St. Louis, MO 63110
+            br
+            | United States
+            br
+            abbr(title="Phone") P
+            |  (314) 454-6000
     //Section Related Patients
     .jumbotron: .container
       .row.text-center

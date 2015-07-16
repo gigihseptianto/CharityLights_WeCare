@@ -16,6 +16,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/ie-emulation-modes-warning.js"></script>
+    <!--Maps API-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+      function mapBG() {
+      var mapCanvas = document.getElementById("hospital-map");
+      var lat = mapCanvas.getAttribute('data-lat');
+      var lng = mapCanvas.getAttribute('data-lng');
+      var latlng = new google.maps.LatLng(lat, lng);
+      var hospital_name = mapCanvas.getAttribute('data-hospital-name');
+      var mapOptions = {
+      center: latlng,
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      disableDefaultUI: false
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({
+      position: latlng,
+      map: map,
+      title: hospital_name})};
+      google.maps.event.addDomListener(window, 'load', mapBG);
+    </script>
   </head>
   <body>
     <!--Navbar-->
@@ -76,7 +98,7 @@
         <div class="col-md-9">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="patient-name">Indah</h1>
+              <h1 class="patient-name">Carter Casey</h1>
             </div>
           </div>
           <div class="row">
@@ -172,6 +194,8 @@
         <div class="col-md-4">  
           <div class="panel col-md-12">
             <h3 class="widget-title">Hospital Information</h3>
+            <div id="hospital-map" data-lat="38.6378445" data-long="-90.2650156" data-hospital-name="St. Louis Children’s Hospital" class="row hospital-map"></div>
+            <address id="hospital-address"><strong>St. Louis Children’s Hospital</strong><br>1 Childrens Pl<br>St. Louis, MO 63110<br>United States<br><abbr title="Phone">P</abbr> (314) 454-6000</address>
           </div>
         </div>
       </div>
