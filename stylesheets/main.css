@@ -8852,6 +8852,10 @@ h1 {
     margin-bottom: 30px;
     margin-top: -25px; }
 
+h3.widget-title {
+  margin-bottom: 1em;
+  font-family: 'blogger_sansitalic', Fallback, sans-serif; }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600; }
 
@@ -9112,7 +9116,9 @@ input[type="button"], button, .btn {
   input[type="button"].btn-dropdown, button.btn-dropdown, .btn.btn-dropdown {
     border-radius: 2px;
     text-transform: none;
-    color: #434B5B; }
+    color: #434B5B;
+    padding-left: 24px;
+    padding-right: 24px; }
     [role="button"].btn-dropdown:hover,
     input[type="submit"].btn-dropdown:hover,
     input[type="reset"].btn-dropdown:hover,
@@ -9394,7 +9400,8 @@ input:not([type=submit]):not([type=file]) {
 .navbar-nav li a {
   line-height: 64px;
   height: 64px;
-  padding-top: 0; }
+  padding-top: 0;
+  outline: none; }
 
 .navbar-default .navbar-toggle {
   color: #F7F5F5;
@@ -9417,45 +9424,59 @@ input:not([type=submit]):not([type=file]) {
   font-size: 157%;
   display: inline-block; }
 
-.jumbotron.header {
-  background-color: rgba(61, 59, 71, 0.5);
-  background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/kids1.jpg");
-  background-size: cover;
-  background-position: center;
-  color: #F7F5F5;
-  min-height: 50vh; }
-.jumbotron.how-it-works {
-  background-color: #5BE394;
-  min-height: 50vh; }
-.jumbotron.app-promo {
-  background-color: rgba(61, 59, 71, 0.5);
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/jogger.jpg");
-  background-size: cover;
-  background-position: center;
-  color: #F7F5F5;
-  min-height: 80vh; }
-.jumbotron.footer {
-  background-color: #3D3B47; }
-  .jumbotron.footer .title {
-    text-transform: uppercase;
-    color: rgba(247, 245, 245, 0.5);
-    font-weight: bold; }
-  .jumbotron.footer .nav li a {
-    padding-left: 8px;
-    color: #F7F5F5; }
-    .jumbotron.footer .nav li a:visited {
-      color: #F7F5F5;
-      background-color: #3D3B47; }
-    .jumbotron.footer .nav li a:hover, .jumbotron.footer .nav li a:active {
-      background-color: #3D3B47;
+.jumbotron {
+  padding-top: 24px;
+  padding-bottom: 24px; }
+  .jumbotron.header {
+    background-color: rgba(61, 59, 71, 0.5);
+    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/kids1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #F7F5F5;
+    min-height: 50vh; }
+  .jumbotron.how-it-works {
+    background-color: #F2CE4D;
+    min-height: 50vh; }
+    .jumbotron.how-it-works h3 {
+      font-family: 'blogger_sansitalic', Fallback, sans-serif;
+      letter-spacing: 0.3px;
+      border-bottom: 2px solid #F7F5F5;
+      padding-bottom: 1em; }
+    .jumbotron.how-it-works p {
+      font-size: 114%;
+      font-weight: 400;
+      letter-spacing: 0px; }
+  .jumbotron.app-promo {
+    background-color: rgba(61, 59, 71, 0.75);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/jogger.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #F7F5F5;
+    min-height: 80vh; }
+    .jumbotron.app-promo .section-title {
       color: #5BE394; }
-.jumbotron.copyright {
-  font-size: 85%;
-  color: rgba(247, 245, 245, 0.5);
-  background-color: #2A2830;
-  font-weight: 500;
-  padding-top: 1em;
-  padding-bottom: 1em; }
+  .jumbotron.footer {
+    background-color: #3D3B47; }
+    .jumbotron.footer .title {
+      text-transform: uppercase;
+      color: rgba(247, 245, 245, 0.5);
+      font-weight: bold; }
+    .jumbotron.footer .nav li a {
+      padding-left: 8px;
+      color: #F7F5F5; }
+      .jumbotron.footer .nav li a:visited {
+        color: #F7F5F5;
+        background-color: #3D3B47; }
+      .jumbotron.footer .nav li a:hover, .jumbotron.footer .nav li a:active {
+        background-color: #3D3B47;
+        color: #5BE394; }
+  .jumbotron.copyright {
+    font-size: 85%;
+    color: rgba(247, 245, 245, 0.5);
+    background-color: #2A2830;
+    font-weight: 500;
+    padding-top: 1em;
+    padding-bottom: 1em; }
 
 .patient-img {
   background-color: #57e291;

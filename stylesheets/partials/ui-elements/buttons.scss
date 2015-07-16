@@ -118,6 +118,8 @@ input[type="button"], button, .btn {
 		border-radius: 2px;
 		text-transform: none;
 		color: $cl-black;
+		padding-left: 24px;
+		padding-right: 24px;
 		&:hover {
 			color: $cl-green;
 		}

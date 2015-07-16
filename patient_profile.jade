@@ -31,7 +31,6 @@ html(lang="en")
            form.row
             .col-md-6.col-xs-12
               .input-group
-                //span.input-group-addon#amount $
                 .input-group-btn
                   button.btn.btn-dropdown.dropdown-toggle(type="button", data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Rp. 
                     span.caret
@@ -51,10 +50,10 @@ html(lang="en")
         .panel.col-md-12
           .patient-story
             include ./includes/patient-story-example.jade
-            .text-center: h4: a.btn-link(href="http://example.com") Share this story  
+            .text-center: h4: a.btn-link(href="#") Share this story  
       .col-md-4
         .panel.col-md-12
-          h3.widget-title(style="margin-bottom:1em;font-family:'blogger_sansmedium_italic', Fallback, sans-serif;") Funded by
+          h3.widget-title Funded by
           .row.donator-grid
             .col-md-3.col-xs-3: a(href="http://user1"): .container.donator-avatar
             .col-md-3.col-xs-3: a(href="http://user2"): .container.donator-avatar
@@ -66,7 +65,7 @@ html(lang="en")
             .col-md-3.col-xs-3: a(href="http://user7"): .container.donator-avatar
       .col-md-4   
         .panel.col-md-12
-          h3.widget-title(style="margin-bottom:1em;font-family:'blogger_sansmedium_italic', Fallback, sans-serif;") Hospital Information
+          h3.widget-title Hospital Information
     //Section Related Patients
     .jumbotron: .container
       .row.text-center
