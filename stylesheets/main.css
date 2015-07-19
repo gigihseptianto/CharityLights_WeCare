@@ -8931,6 +8931,23 @@ article blockquote {
   article blockquote::after {
     content: ""; }
 
+a.link {
+  color: #5BE394;
+  text-decoration: none;
+  letter-spacing: 0.3px; }
+  a.link:hover {
+    cursor: pointer;
+    color: #FB4B5E;
+    text-decoration: none; }
+  a.link:active {
+    cursor: pointer;
+    color: #FB4B5E;
+    text-decoration: none; }
+  a.link:focus {
+    cursor: pointer;
+    color: #FB4B5E;
+    text-decoration: none;
+    outline: none; }
 a.btn-link {
   color: #5BE394;
   text-decoration: none;
@@ -8941,6 +8958,15 @@ a.btn-link {
     cursor: pointer;
     color: #FB4B5E;
     text-decoration: none; }
+  a.btn-link:active {
+    cursor: pointer;
+    color: #FB4B5E;
+    text-decoration: none; }
+  a.btn-link:focus {
+    cursor: pointer;
+    color: #FB4B5E;
+    text-decoration: none;
+    outline: none; }
 
 pre {
   background: #D8D8D8;
