@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    - var pagetitle = "User Profile"
+    include ./includes/head.jade
+  body
+    //Navbar
+    include ./includes/navbar.jade
+    //Login Modal
+    include ./includes/login-modal.jade
+    //CONTENTS
+    //Section Title
+    .jumbotron
+      .container.text-center
+        h1
+          span Help Cassie
+    //Section Footer
+    include ./includes/footer.jade
