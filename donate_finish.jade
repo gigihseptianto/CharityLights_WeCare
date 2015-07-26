@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
   head
-    - var pagetitle = "Donate – Amount"
+    - var pagetitle = "Donate – Summary"
     include ./includes/head.jade
   body
     //Navbar
@@ -13,25 +13,20 @@ html(lang="en")
     .jumbotron.donation-step: .container.text-center
       h1.section-title Help Cassie
       .col-md-4.col-sm-4.col-xs-4
-        span.step.active 1
+        a(href="#step-1", title="back to step 1"): span.step.completed 1
         h4 Donate
       .col-md-4.col-sm-4.col-xs-4
-        span.step 2
+        a(href="#step-1", title="back to step 2"): span.step.completed 2
         h4 Payment
       .col-md-4.col-sm-4.col-xs-4
-        span.step 3
+        span.step.active 3
         h4 Complete
-    .jumbotron: .container  
+    .jumbotron.payment-method: .container.text-center 
+      h2.section-title Donation Amount $5,-
+      h3.section-title Payment via Bank Transfer
       form
         .col-md-4.col-md-offset-4
-          .input-group
-            span.input-group-addon#basic-addon1 Donation Amount $
-            input.form-control(type="text", placeholder="e.g., 5000", aria-describedby="basic-addon1", value="5")
-          .checkbox
-            label(for="anonymous-donation")
-              input(type="checkbox" value="none" id="anonymous-donation")
-              | Donate Anonymousy
           br
-          button.btn.primary.full-width(type="submit") Next
+          button.btn.primary.full-width(type="submit") Donate Now
     //Section Footer
     include ./includes/footer.jade

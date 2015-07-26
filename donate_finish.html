@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Title-->
-    <title>Donate – Amount</title>
+    <title>Donate – Summary</title>
     <!-- Bootstrap core CSS-->
     <link href="stylesheets/main.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -69,30 +69,24 @@
     <div class="jumbotron donation-step">
       <div class="container text-center">
         <h1 class="section-title">Help Cassie</h1>
-        <div class="col-md-4 col-sm-4 col-xs-4"><span class="step active">1</span>
+        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#step-1" title="back to step 1"><span class="step completed">1</span></a>
           <h4>Donate</h4>
         </div>
-        <div class="col-md-4 col-sm-4 col-xs-4"><span class="step">2</span>
+        <div class="col-md-4 col-sm-4 col-xs-4"><a href="#step-1" title="back to step 2"><span class="step completed">2</span></a>
           <h4>Payment</h4>
         </div>
-        <div class="col-md-4 col-sm-4 col-xs-4"><span class="step">3</span>
+        <div class="col-md-4 col-sm-4 col-xs-4"><span class="step active">3</span>
           <h4>Complete</h4>
         </div>
       </div>
     </div>
-    <div class="jumbotron">
-      <div class="container"> 
+    <div class="jumbotron payment-method">
+      <div class="container text-center"> 
+        <h2 class="section-title">Donation Amount $5,-</h2>
+        <h3 class="section-title">Payment via Bank Transfer</h3>
         <form>
-          <div class="col-md-4 col-md-offset-4">
-            <div class="input-group"><span id="basic-addon1" class="input-group-addon">Donation Amount $</span>
-              <input type="text" placeholder="e.g., 5000" aria-describedby="basic-addon1" value="5" class="form-control">
-            </div>
-            <div class="checkbox">
-              <label for="anonymous-donation">
-                <input type="checkbox" value="none" id="anonymous-donation">Donate Anonymousy
-              </label>
-            </div><br>
-            <button type="submit" class="btn primary full-width">Next</button>
+          <div class="col-md-4 col-md-offset-4"><br>
+            <button type="submit" class="btn primary full-width">Donate Now</button>
           </div>
         </form>
       </div>

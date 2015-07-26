@@ -51,6 +51,9 @@
 	display: inline-block;
 }
 //jumbotron
+.long-margin-bottom {
+	padding-bottom: 6em !important;
+}
 .jumbotron {
 	padding-top: 24px;
 	padding-bottom: 24px;
@@ -98,6 +101,44 @@
 		min-height: 80vh;
 		.section-title {
 			color: $cl-green;
+		}
+	}
+	//user-profile
+	&.user-profile {
+		padding-bottom:0px;
+	}
+	//donation
+	&.donation-step {
+		.step {
+			display: inline-block;
+			font-family: "blogger_sansmedium", Fallback, sans-serif;
+			line-height: 1;
+			font-size: $h3;
+			padding: 0.75em 1em;
+			border: dashed 2px $cl-grey;
+			@include rounded-maximum;
+			-webkit-font-smoothing: antialiased;
+			-webkit-transition-delay: 0s;
+			-webkit-transition-duration: 0.25s;
+			-webkit-transition-property: background-color, border, color, -webkit-box-shadow, -moz-box-shadow, box-shadow;
+			-webkit-transition-timing-function: ease;
+			transition-delay: 0s;
+			transition-duration: 0.25s;
+			transition-property: background-color, border, color;
+			transition-timing-function: ease;
+		}
+		.active {
+			color: $cl-green;
+			border: solid 2px $cl-green;
+		}
+		.completed {
+			border: solid 2px $cl-blue;
+			background: $cl-green;
+			color: $cl-white;
+			&:hover{
+				background: none;
+				color: $cl-blue;
+			}
 		}
 	}
 	//footer
@@ -172,7 +213,7 @@
 .donation-summary {
 	margin-top: 8px;
 	margin-bottom: 8px;	
-	.to-go, .raised, .donator {
+	.to-go, .raised, .donator, .percentage {
 		font-weight: bold;
 		margin-bottom: 0px;
 	}

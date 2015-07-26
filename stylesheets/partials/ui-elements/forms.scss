@@ -24,10 +24,9 @@ label {
    display: block;
    padding-left: 4px;
    letter-spacing: 0.5px;
-   color: #838689;
+   color: $cl-dark-purple;
    font-weight: $medium;
    text-transform: uppercase;
-   margin-top: 1.5em;
    &.warning {
       color: $warning;
    }
@@ -38,7 +37,10 @@ label {
       color: $text-disable;
    }
 }
-input:not([type=submit]):not([type=file]) {
+input[type=text] {
+   color: $cl-black;
+}
+input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio]) {
    line-height: 1.3;
    width: 100%;
    letter-spacing: 0.5px;
@@ -73,9 +75,9 @@ input:not([type=submit]):not([type=file]) {
 //label
 .input-group-addon {
   padding: 6px 12px;
-  width: 90px;
+  min-width: 110px;
   font-weight: $medium;
-  color: $cl-black;
+  color: $cl-dark-purple;
   text-align: left;
   background-color: white;
    border: none;
@@ -124,98 +126,4 @@ input:not([type=submit]):not([type=file]) {
 .open>.dropdown-menu{
    display: block;
    z-index: 99;
-}
-//radionbutton
-.radio {
-   input[type=radio] {
-      display: none;
-   }
-   label {
-      cursor: pointer;
-      position: relative;
-      padding: 0 2em;
-      margin: 1em 0 1em 0.5em;
-      display: inline-block !important;
-      font-weight: $demi-bold;
-      color: $secondary-color;
-      &:before {
-         content: "";
-         display: inline-block;
-         @include rounded-maximum();
-         @include square-size (16px);
-         @include button-box-shadow(0, 1px, 0, rgba(#fff, .2 ), 0, 1px, 0, rgba(#000, .2 ));
-         border: solid 2px $secondary-color;
-         background: none;
-         position: absolute;
-         left: 0;
-         bottom: 2px;
-      }
-      &:hover {
-         &:before {
-            border: solid 2px $primary-color;
-         }
-      }
-
-   }
-   input[type=radio]:checked + label{
-      color: $primary-color;
-      &:before {
-       background: url(../img/icon_form_radio.svg) no-repeat;
-       background-size: 100%;
-         background-color: $primary-color;
-      }
-      &:hover {
-         &:before {
-            border: solid 2px $primary-color;
-            background-color: $secondary-color;
-         }
-      }
-   }
-}
-//checkbox
-.checkbox {
-   input[type=checkbox] {
-      display: none;
-   }
-   label {
-      cursor: pointer;
-      position: relative;
-      padding: 0 2em;
-      margin: 1em 0 1em 0.5em;
-      display: inline-block !important;
-      font-weight: $demi-bold;
-      color: $secondary-color;
-      &:before {
-         content: "";
-         display: inline-block;
-         @include rounded();
-         @include square-size (16px);
-         @include button-box-shadow(0, 1px, 0, rgba(#fff, .2 ), 0, 1px, 0, rgba(#000, .2 ));
-         border: solid 2px $secondary-color;
-         background: none;
-         position: absolute;
-         left: 0;
-         bottom: 2px;
-      }
-      &:hover {
-         &:before {
-            border: solid 2px $primary-color;
-         }
-      }
-
-   }
-   input[type=checkbox]:checked + label{
-      color: $primary-color;
-      &:before {
-       background: url(../img/icon_form_check.svg) no-repeat;
-       background-size: 100%;
-         background-color: $primary-color;
-      }
-      &:hover {
-         &:before {
-            border: solid 2px $primary-color;
-            background-color: $secondary-color;
-         }
-      }
-   }
 }

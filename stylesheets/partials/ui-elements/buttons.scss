@@ -60,14 +60,14 @@ input[type="button"], button, .btn {
 	-webkit-transition-duration: 0.25s;
 	-webkit-transition-property: background-color, border, color, -webkit-box-shadow, -moz-box-shadow, box-shadow;
 	-webkit-transition-timing-function: ease;
-	@include rounded-maximum;
-	box-sizing: border-box;
-	cursor: pointer;
-	display: inline-block;
 	transition-delay: 0s;
 	transition-duration: 0.25s;
 	transition-property: background-color, border, color;
 	transition-timing-function: ease;
+	@include rounded-maximum;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
 	word-wrap: break-word;
 	&:focus {
 		outline: none;
@@ -83,8 +83,9 @@ input[type="button"], button, .btn {
 		}
 		&:active {
 			background: none;
-			@include button-box-shadow(0, 1px, 0, rgba($black, .3), 0, 0, 0, rgba(#fff, 0 ));
+			@include button-box-shadow(0, 0, 0, rgba($black, 0), 0, 0, 0, rgba(#fff, 0 ));
 			color: $cl-magenta;
+			outline: none;
 		}
 	}
 	&.icon-left {

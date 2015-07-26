@@ -1,0 +1,89 @@
+doctype html
+html(lang="en")
+  head
+    - var pagetitle = "Donate – Payment"
+    include ./includes/head.jade
+  body
+    //Navbar
+    include ./includes/navbar.jade
+    //Login Modal
+    include ./includes/login-modal.jade
+    //CONTENTS
+    //Section How it Works
+    .jumbotron.donation-step: .container.text-center
+      h1.section-title Help Cassie
+      .col-md-4.col-sm-4.col-xs-4
+        a(href="#step-1", title="back to step 1"): span.step.completed 1
+        h4 Donate
+      .col-md-4.col-sm-4.col-xs-4
+        span.step.active 2
+        h4 Payment
+      .col-md-4.col-sm-4.col-xs-4
+        span.step 3
+        h4 Complete
+    .jumbotron.payment-method: .container.text-center
+      h2.section-title Payment Method
+      form.text-left
+        .col-md-4.col-md-offset-4
+          .radio
+            h3.section-title: label(for="credit-card", style="padding:0.5em 0;")
+              input(type="radio" name="payment-method" id="credit-card" data-target="#collapseCreditOption" data-toggle="collapse" href="#collapseCreditOption" aria-expanded="true" aria-controls="collapseCreditOption")
+              | Credit Card
+          .collapse#collapseCreditOption
+            form.form-inline
+              .input-group
+                span.input-group-addon#basic-addon1 Card Number
+                input.form-control(type="text", placeholder="", aria-describedby="basic-addon1", value="")
+              .input-group
+                span.input-group-addon#basic-addon2 Valid Until
+                input.form-control(type="text", placeholder="", aria-describedby="basic-addon2", value="")
+              .input-group
+                span.input-group-addon#basic-addon3 CVV
+                input.form-control(type="text", placeholder="", aria-describedby="basic-addon3", value="")
+          .radio
+            h3.section-title: label(for="bank-transfer", style="padding:0.5em 0;")
+              input(type="radio" name="payment-method" id="bank-transfer" data-target="#collapseBankOption" data-toggle="collapse" href="#collapseBankOption" aria-expanded="true" aria-controls="collapseBankOption")
+              | Bank Transfer
+          .collapse#collapseBankOption
+            form
+              .input-group
+                span.input-group-addon#basic-addon1 Bank
+                input.form-control(type="text", placeholder="", aria-describedby="basic-addon1", value="")
+              .input-group
+                span.input-group-addon#basic-addon2 Branch
+                input.form-control(type="text", placeholder="", aria-describedby="basic-addon2", value="")
+              .input-group
+                span.input-group-addon#basic-addon3 Acc. Number
+                input.form-control(type="text", placeholder="", aria-describedby="basic-addon3", value="")
+              .input-group
+                span.input-group-addon#basic-addon4 Acc. Holder
+                input.form-control(type="text", placeholder="", aria-describedby="basic-addon4", value="")
+              .checkbox
+                label(for="anonymous-donation")
+                  input(type="checkbox" value="none" id="anonymous-donation")
+                  | Save Bank Info For Next Donation
+          .radio
+            h3.section-title: label(for="paypal", style="padding:0.5em 0;")
+              input(type="radio" name="payment-method" id="paypal" data-target="#collapsePaypalOption" data-toggle="collapse" href="#collapsePaypalOption" aria-expanded="true" aria-controls="collapsePaypalOption")
+              | Paypal
+          .collapse#collapsePaypalOption    
+          br
+          button.btn.primary.full-width(type="submit") Next
+          script.
+            $('#collapseCreditOption').on('shown.bs.collapse', function () {
+            $("#collapseBankOption").collapse('hide');
+            $("#collapsePaypalOption").collapse('hide');              
+            $('#credit-card').prop('checked',true);
+            });
+            $('#collapseBankOption').on('shown.bs.collapse', function () {              
+            $("#collapseCreditOption").collapse('hide');
+            $("#collapsePaypalOption").collapse('hide');              
+            $('#bank-transfer').prop('checked',true);
+            });
+            $('#collapsePaypalOption').on('shown.bs.collapse', function () {              
+            $("#collapseCreditOption").collapse('hide'); 
+            $("#collapseBankOption").collapse('hide');  
+            $('#paypal').prop('checked',true);
+            });
+    //Section Footer
+    include ./includes/footer.jade
