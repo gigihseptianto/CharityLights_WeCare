@@ -9413,6 +9413,24 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
       color: #5BE394; }
   .jumbotron.user-profile {
     padding-bottom: 0px; }
+  .jumbotron.patient-header {
+    background-color: rgba(61, 59, 71, 0.5);
+    color: #F7F5F5;
+    min-height: 50vh;
+    padding-bottom: 0px;
+    position: relative;
+    overflow: hidden; }
+    .jumbotron.patient-header .blur-patient-bg {
+      position: absolute;
+      width: 110%;
+      height: 110%;
+      margin: -1.5em 0;
+      background: url("../img/kids1.jpg");
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+      filter: blur(20px);
+      -webkit-filter: blur(20px); }
   .jumbotron.donation-step .step {
     display: inline-block;
     font-family: "blogger_sansmedium", Fallback, sans-serif;
@@ -9469,12 +9487,16 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
 
 .patient-img {
   background-color: #57e291;
+  background-image: url("../img/Kids 5.jpg");
+  background-size: cover;
   min-width: 100%;
   padding-bottom: 56%;
   border-radius: 2px 2px 0 0; }
 
 .patient-img-full {
   background-color: #414958;
+  background-image: url("../img/Kids 5.jpg");
+  background-size: cover;
   min-width: 100%;
   padding-bottom: 100%;
   border-radius: 2px; }
@@ -9494,6 +9516,25 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
 
 .patient-row {
   margin-bottom: 2em; }
+
+.patient-update {
+  list-style: none;
+  padding-left: 0px; }
+  .patient-update .patient-card {
+    margin-bottom: 10px; }
+
+.patient-update-title {
+  margin-top: 0px; }
+
+.patient-img-thumbnail {
+  background-color: #434B5B;
+  background-image: url("../img/Kids 5.jpg");
+  background-size: cover;
+  min-width: 100%;
+  padding-bottom: 100%;
+  border-radius: 2px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 .donation-progress {
   margin-top: 32px;
@@ -9525,6 +9566,14 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   padding-bottom: 56%;
   border-radius: 0;
   margin-bottom: 1em; }
+
+.user-img {
+  background-color: #414958;
+  background-image: url("../img/user-img.jpg");
+  background-size: cover;
+  min-width: 100%;
+  padding-bottom: 100%;
+  border-radius: 2px; }
 
 html {
   -ms-text-size-adjust: 100%;
