@@ -6,9 +6,10 @@
    width: 100%;
    margin-bottom: 16px;
    background: white;
-   border: 1px solid #EAE0E0;
    @include rounded();
-   @include button-box-shadow(0, 0, 0, rgba(#fff, 0 ), 0, 1px, 0, rgba(#9894A9, .5));
+   border: 1px solid $light-grey;
+   -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.12), 0px 1px 1px 0px rgba(0,0,0,0.24);
+          box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.12), 0px 1px 1px 0px rgba(0,0,0,0.24);
    &:hover {
       border: 1px solid $cl-green;
    }

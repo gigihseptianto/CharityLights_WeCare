@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+  head
+    - var pagetitle = "WeCare ID – [partner_name]"
+    include ./includes/head.jade
+  body
+    //Navbar
+    include ./includes/navbar.jade
+    //Login Modal
+    include ./includes/login-modal.jade
+    //CONTENTS
+    //Section Header
+    .jumbotron.partner-header
+      .blur-patient-bg
+      .container.text-center
+        .col-md-12
+          .row: .col-md-12
+            h1.partner-name(style="margin-top:1em;") Partner Name
+            h3.section-title 2,718 donors have funded healthcare for 442 Partner Name patients in Indonesia.
+          .row: .col-md-12.text-center
+            ul.contact-list.nav.nav-pills
+              li: a(href="#facebook"): img(src="img/ic_contact_facebook.png" width="24px" height="24px")
+              li: a(href="#twitter"): img(src="img/ic_contact_twitter.png" width="24px" height="24px")
+              li: a(href="#gplus"): img(src="img/ic_contact_gplus.png" width="24px" height="24px")
+              li: a(href="#instagram"): img(src="img/ic_contact_instagram.png" width="24px" height="24px")
+              li: a(href="#web"): img(src="img/ic_contact_web.png" width="24px" height="24px")
+          .row: .col-md-12.col-xs-12     
+            button.btn.primary(type="submit") View All Patients
+    //Section Story
+    .jumbotron: .container
+      .col-md-8
+        .panel.row
+          .patient-story
+            include ./includes/partner-details-example.jade
+      .col-md-4
+        .col-md-12
+          h4.widget-title.media-heading Partner Logo
+    //Section Related Patients
+    .jumbotron: .container
+      .row.text-center
+        h2.section-title Patients from Partner Name
+      .row.patient-row
+        include ./includes/patient-card.jade
+        include ./includes/patient-card.jade
+        include ./includes/patient-card.jade
+      .text-center: a.btn.primary View More Patients
+    //Section Footer
+    include ./includes/footer.jade

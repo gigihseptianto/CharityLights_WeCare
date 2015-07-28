@@ -7598,7 +7598,7 @@ button.list-group-item-danger.active:focus {
 .panel {
   margin-bottom: 20px;
   background-color: #fff;
-  border: 1px solid transparent;
+  border: 1px solid #F7F9FA;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.24); }
@@ -8846,7 +8846,7 @@ h1 {
     line-height: 1; }
 
 .section-title {
-  font-family: blogger_sansmedium_italic, Fallback, sans-serif;
+  font-family: blogger_sanslight, Fallback, sans-serif;
   margin-bottom: 1em; }
   .section-title + p {
     margin-bottom: 30px;
@@ -9205,13 +9205,12 @@ input[type="button"], button, .btn {
   width: 100%;
   margin-bottom: 16px;
   background: white;
-  border: 1px solid #EAE0E0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 0 0 rgba(255, 255, 255, 0), 0 1px 0 rgba(152, 148, 169, 0.5);
-  -moz-box-shadow: inset 0 0 0 rgba(255, 255, 255, 0), 0 1px 0 rgba(152, 148, 169, 0.5);
-  box-shadow: inset 0 0 0 rgba(255, 255, 255, 0), 0 1px 0 rgba(152, 148, 169, 0.5); }
+  border: 1px solid #F7F9FA;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.24); }
   .input-group:hover {
     border: 1px solid #5BE394; }
   .input-group:focus {
@@ -9372,6 +9371,9 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
     color: #F7F5F5;
     background: none; }
 
+.navbar-collapse {
+  border-top: 1px solid #3898d8; }
+
 .cl-logo {
   color: #F7F5F5;
   font-size: 157%;
@@ -9385,11 +9387,13 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   padding-bottom: 24px; }
   .jumbotron.header {
     background-color: rgba(61, 59, 71, 0.5);
-    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/kids1.jpg");
+    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/Kids 5.jpg");
     background-size: cover;
     background-position: center;
     color: #F7F5F5;
     min-height: 50vh; }
+    .jumbotron.header h1 {
+      padding-top: 1em; }
   .jumbotron.how-it-works {
     background-color: #F2CE4D;
     min-height: 50vh; }
@@ -9424,8 +9428,8 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
       position: absolute;
       width: 110%;
       height: 110%;
-      margin: -1.5em 0;
-      background: url("../img/kids1.jpg");
+      margin: -2em 0;
+      background: url("../img/Kids 5.jpg");
       z-index: -1;
       background-size: cover;
       background-position: center;
@@ -9489,6 +9493,7 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   background-color: #57e291;
   background-image: url("../img/Kids 5.jpg");
   background-size: cover;
+  background-position: center;
   min-width: 100%;
   padding-bottom: 56%;
   border-radius: 2px 2px 0 0; }
@@ -9497,6 +9502,7 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   background-color: #414958;
   background-image: url("../img/Kids 5.jpg");
   background-size: cover;
+  background-position: center;
   min-width: 100%;
   padding-bottom: 100%;
   border-radius: 2px; }
@@ -9530,11 +9536,10 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   background-color: #434B5B;
   background-image: url("../img/Kids 5.jpg");
   background-size: cover;
-  min-width: 100%;
-  padding-bottom: 100%;
-  border-radius: 2px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  background-position: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 2px; }
 
 .donation-progress {
   margin-top: 32px;
@@ -9571,6 +9576,7 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   background-color: #414958;
   background-image: url("../img/user-img.jpg");
   background-size: cover;
+  background-position: center;
   min-width: 100%;
   padding-bottom: 100%;
   border-radius: 2px; }

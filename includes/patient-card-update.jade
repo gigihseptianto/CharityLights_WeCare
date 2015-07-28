@@ -1,19 +1,19 @@
 .panel.patient-card.col-md-12
   .row
-    .col-md-3
-      .container.patient-img-thumbnail
-    .col-md-9
-      .patient-summary
-        h4(style="margin-top:15px;") Indah (3), Riau
-      .row.donation-summary
-        .col-md-4.col-xs-6
-          span.raised Rp. 999,999,-
-          span.donation-label raised
-        .col-md-4.col-xs-6
-          span.to-go Rp. 999,999,-
-          span.donation-label to go
-        .col-md-4.hidden-xs
-          span.donator 1,999
-          span.donation-label donator
-        .col-md-6
-          h4(style="margin-top:15px;"): a.btn-link(href="#patients-2") View Update
+    .media
+      .media-left.media-middle
+        a(href="#"): .patient-img-thumbnail
+      .media-body
+          .col-md-12.col-xs-12
+            a.link(href="#"): h4.patient-name.media-heading Indah (3), Riau
+          .col-md-12.col-xs-12
+            .donation-summary.row
+              .col-md-4.col-sm-4.col-xs-6
+                small.raised Rp. 999,999,-
+                span.donation-label raised
+              .col-md-4.col-sm-4.col-xs-6
+                small.to-go Rp. 999,999,-
+                span.donation-label to go
+              .col-md-4.col-sm-4.hidden-xs
+                small.donator 1,999
+                span.donation-label donator
