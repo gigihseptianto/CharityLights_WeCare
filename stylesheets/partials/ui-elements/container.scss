@@ -46,7 +46,7 @@
 	}
 }
 .navbar-collapse {
-	border-top: 1px solid darken($cl-blue, .5);
+	//border-top: 1px solid darken($cl-blue, .5);
 }
 .cl-logo {
 	color: $cl-white;
@@ -117,8 +117,8 @@
 	&.patient-header{
 		background-color: rgba($black, .5);
 		color: $cl-white;
-		min-height: 50vh;
-		padding-bottom:0px;
+		//min-height: 50vh;
+		padding-bottom:24px;
 		position: relative;
 		overflow: hidden;
 		.blur-patient-bg {

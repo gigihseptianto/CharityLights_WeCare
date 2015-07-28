@@ -14,10 +14,10 @@ html(lang="en")
     .jumbotron.patient-header
       .blur-patient-bg
       .container
-        .col-md-3
+        .col-md-3.col-sm-12
           .panel.col-md-12
             .row.patient-img-full
-        .col-md-9
+        .col-md-9.col-sm-12
           .row: .col-md-12: h1.patient-name Indah
           .row
             .col-md-12.col-xs-12
@@ -28,7 +28,7 @@ html(lang="en")
                 .col-md-4.col-xs-6
                   h3.to-go Rp. 999,999,-
                   p.donation-label to go
-                .col-md-4.col-xs-12
+                .col-md-4.hidden-sm.hidden-xs
                   h3.donator 1,999
                   p.donation-label donator
            form.row
@@ -41,16 +41,16 @@ html(lang="en")
                     li: a(href="#") Rp.
                     li: a(href="#") $
                 input.form-control(type="text", placeholder="e.g., 50,000", aria-describedby="amount")
-            .col-md-6.col-xs-12     
+            .col-md-3.col-xs-12.text-center 
               button.btn.primary(type="submit") Donate Now
         .col-md-12      
-          .donation-progress.progress
+          .container: .donation-progress.progress
             .progress-bar(role="progressbar", aria-valuenow="60", aria-valuemin="0", aria-valuemax="100", style="width: 60%;", title="60%")
               span.sr-only 60% Complete
     //Section Story
     .jumbotron: .container
       .col-md-8
-        .panel.row
+        .panel
           .patient-story
             include ./includes/patient-story-example.jade
             .text-center: h4: a.btn-link(href="#") Share this story
@@ -83,9 +83,9 @@ html(lang="en")
             |  (314) 454-6000
     //Section Related Patients
     .jumbotron: .container
-      .row.text-center
+      .text-center
         h2.section-title Other Patients
-      .row.patient-row
+      .patient-row
         include ./includes/patient-card.jade
         include ./includes/patient-card.jade
         include ./includes/patient-card.jade

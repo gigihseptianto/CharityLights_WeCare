@@ -9371,9 +9371,6 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
     color: #F7F5F5;
     background: none; }
 
-.navbar-collapse {
-  border-top: 1px solid #3898d8; }
-
 .cl-logo {
   color: #F7F5F5;
   font-size: 157%;
@@ -9420,8 +9417,7 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   .jumbotron.patient-header {
     background-color: rgba(61, 59, 71, 0.5);
     color: #F7F5F5;
-    min-height: 50vh;
-    padding-bottom: 0px;
+    padding-bottom: 24px;
     position: relative;
     overflow: hidden; }
     .jumbotron.patient-header .blur-patient-bg {
