@@ -9412,8 +9412,10 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
     min-height: 80vh; }
     .jumbotron.app-promo .section-title {
       color: #5BE394; }
+  .jumbotron.small-banner {
+    min-height: 50vh; }
   .jumbotron.user-profile {
-    padding-bottom: 0px; }
+    padding-bottom: 24px; }
   .jumbotron.patient-header {
     background-color: rgba(61, 59, 71, 0.5);
     color: #F7F5F5;

@@ -109,9 +109,12 @@
 			color: $cl-green;
 		}
 	}
+	&.small-banner {
+		min-height: 50vh;
+	}
 	//user-profile
 	&.user-profile {
-		padding-bottom:0px;
+		padding-bottom:24px;
 	}
 	//patient-profile
 	&.patient-header{
