@@ -9174,7 +9174,7 @@ input[type="button"], button, .btn {
     text-align: center;
     font-size: 85%;
     line-height: 1.75;
-    min-width: calc(100% - 1em);
+    min-width: 100%;
     background: linear-gradient(rgba(255, 255, 255, 0.8), white); }
     [role="button"].special-readmore:hover,
     input[type="submit"].special-readmore:hover,
@@ -9506,10 +9506,10 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
 .patient-summary {
   position: relative; }
 
-.patient-story {
+.patient-story, .partner-detail {
   padding-top: 20px;
   padding-bottom: 10px; }
-  .patient-story p {
+  .patient-story p, .partner-detail p {
     font-size: 114%;
     font-weight: 300;
     letter-spacing: 0.2px;

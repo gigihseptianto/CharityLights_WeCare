@@ -15,10 +15,10 @@ html(lang="en")
       .container.text-center
         .col-md-12
           .row: .col-md-12
-            h1.partner-name(style="margin-top:1em;") Partner Name
-            h3.section-title 2,718 donors have funded healthcare for 442 Partner Name patients in Indonesia.
+            h1.partner-name(style="margin-top:1em;") Wuqu’ Kawoq
+            h3.section-title 2,718 donors have funded healthcare for 442 Wuqu’ Kawoq patients in Indonesia.
           .row: .col-md-12.text-center
-            ul.contact-list.nav.nav-pills
+            ul.contact-list.nav.nav-pills(style="display:inline-block;padding-top:1em;padding-bottom:1em;")
               li: a(href="#facebook"): img(src="img/ic_contact_facebook.png" width="24px" height="24px")
               li: a(href="#twitter"): img(src="img/ic_contact_twitter.png" width="24px" height="24px")
               li: a(href="#gplus"): img(src="img/ic_contact_gplus.png" width="24px" height="24px")
@@ -29,20 +29,23 @@ html(lang="en")
     //Section Story
     .jumbotron: .container
       .col-md-8
-        .panel.row
-          .patient-story
+        .panel
+          .partner-detail
             include ./includes/partner-details-example.jade
-      .col-md-4
-        .col-md-12
-          h4.widget-title.media-heading Partner Logo
+      .col-md-4.col-sm-6
+          a(href="#"): img(src="img/partner_logo.png" width="100%")
+              
     //Section Related Patients
     .jumbotron: .container
-      .row.text-center
-        h2.section-title Patients from Partner Name
-      .row.patient-row
+      .text-center
+        h2.section-title Patients from Wuqu’ Kawoq
+      .patient-row
         include ./includes/patient-card.jade
         include ./includes/patient-card.jade
         include ./includes/patient-card.jade
-      .text-center: a.btn.primary View More Patients
+      .patient-row
+        include ./includes/patient-card.jade
+        include ./includes/patient-card.jade
+      .col-md-12.text-center: a.btn.primary View More Patients
     //Section Footer
     include ./includes/footer.jade

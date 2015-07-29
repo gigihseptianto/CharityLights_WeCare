@@ -141,7 +141,7 @@ input[type="button"], button, .btn {
 		text-align: center;
 		font-size: $small;
 		line-height: $base-line-height;
-		min-width: calc(100% - 1em);
+		min-width: 100%;
 		background: linear-gradient(rgba(white, 0.8), rgba(white, 1));
 		&:hover {
 			cursor: pointer;
