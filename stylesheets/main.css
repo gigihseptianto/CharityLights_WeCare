@@ -9647,6 +9647,20 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%); }
 
+.member-role {
+  font-family: "blogger_sansbold_italic", Fallback, sans-serif;
+  background-color: #434B5B;
+  color: #F7F5F5;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 0.8em;
+  position: absolute;
+  z-index: 2;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

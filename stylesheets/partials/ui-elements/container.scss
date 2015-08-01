@@ -396,3 +396,17 @@
 	transform:translate(-50%,-50%);
 	-webkit-transform:translate(-50%,-50%);
 }
+.member-role {
+	font-family:"blogger_sansbold_italic", Fallback, sans-serif;
+	background-color: $cl-black;
+	color: $cl-white;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding: 0 0.8em;
+	position:absolute;
+	z-index:2;
+	top:60%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
