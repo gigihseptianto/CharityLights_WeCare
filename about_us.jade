@@ -1,0 +1,57 @@
+doctype html
+html(lang="en")
+  head
+    - var pagetitle = "About WeCare ID"
+    include ./includes/head.jade
+  body
+    //Navbar
+    include ./includes/navbar.jade
+    //Login Modal
+    include ./includes/login-modal.jade
+    //Signup Modal
+    include ./includes/signup-modal.jade
+    //CONTENTS
+    //Section Title
+    .jumbotron.header-about
+      .container.text-center
+        h1 Everyone deserves a healthcare
+    //Section About CharityLights
+    .jumbotron.about
+      .container
+        .col-md-12
+          h2.section-title.text-center About CharityLights
+        .col-md-4
+          picture
+        .col-md-8
+          include ./includes/poetry-ipsum.jade
+    //Section About WeCare ID
+    .jumbotron.about
+          .container
+            .col-md-12
+              h2.section-title.text-center About WeCare ID
+            .col-md-4
+              picture
+            .col-md-8
+              include ./includes/poetry-ipsum.jade
+    //Section how it works
+    .jumbotron.how-it-works-about
+      .container.text-center
+        h2.section-title How It Works
+        .col-md-3.col-sm-3.col-xs-12
+          img(alt="Donate", src="img/ic_donate_about@2x.png", height="114px")
+          h3 Donate
+        .col-md-3.col-sm-3.col-xs-12
+          img(alt="Approval", src="img/ic_approve@2x.png", height="114px")
+          h3 Confirmation
+        .col-md-3.col-sm-3.col-xs-12
+          img(alt="Donate", src="img/ic_donate@2x.png", height="114px")
+          h3 Get Updated
+        .col-md-3.col-sm-3.col-xs-12
+          img(alt="Donate", src="img/ic_donate@2x.png", height="114px")
+          h3 Complete!
+    //Section Team
+    .jumbotron.team
+      .container.text-center
+        h2.section-title The Team
+    //Section Footer
+    include ./includes/footer.jade

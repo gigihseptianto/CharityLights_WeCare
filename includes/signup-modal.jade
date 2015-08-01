@@ -1,0 +1,27 @@
+.modal.fade.signupmodal(role="dialog", aria-labelledby="signupmodal")
+  .modal-dialog.modal-sm(role="document")
+    .modal-content
+      .modal-header
+        button.close(type="button", data-dismiss="modal", aria-label="Close"): span(aria-hidden="true") &times;
+        h2.modal-title#signupmodal Sign Up
+      .modal-body
+        .container-fluid
+          form.row
+            .input-group
+              span.input-group-addon#basic-addon1 Full Name
+              input.form-control(type="text", placeholder="The Doctor", aria-describedby="basic-addon1")
+            .input-group
+              span.input-group-addon#basic-addon2 Email
+              input.form-control(type="text", placeholder="e.g., doctor.who@mail.com", aria-describedby="basic-addon2")
+            .input-group
+              span.input-group-addon#basic-addon3 Password
+              input.form-control(type="password", placeholder="e.g., ••••••••••••", aria-describedby="basic-addon3")
+            //.input-group
+              span.input-group-addon#basic-addon4 Retype Password
+              input.form-control(type="password", placeholder="e.g., ••••••••••••", aria-describedby="basic-addon4")
+            button.btn.primary.full-width(type="button") Sign Up Now
+      .modal-footer
+        //br
+        span OR
+        br
+        a.btn-link.facebook Sign Up using Facebook

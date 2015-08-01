@@ -29,10 +29,10 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Home</a></li>
             <li><a href="all_patients.html">Meet the Patients</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="about_us.html">About Us</a></li>
             <!--li: a(href="#") Contact-->
             <li><a href="#" data-toggle="modal" data-target=".loginmodal">Login</a></li>
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="#" data-toggle="modal" data-target=".signupmodal">Sign Up</a></li>
           </ul>
         </div>
       </div>
@@ -60,6 +60,40 @@
           </div>
           <div class="modal-footer">
             <!--br--><a class="btn-link">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Signup Modal-->
+    <div role="dialog" aria-labelledby="signupmodal" class="modal fade signupmodal">
+      <div role="document" class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+            <h2 id="signupmodal" class="modal-title">Sign Up</h2>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form class="row">
+                <div class="input-group"><span id="basic-addon1" class="input-group-addon">Full Name</span>
+                  <input type="text" placeholder="The Doctor" aria-describedby="basic-addon1" class="form-control">
+                </div>
+                <div class="input-group"><span id="basic-addon2" class="input-group-addon">Email</span>
+                  <input type="text" placeholder="e.g., doctor.who@mail.com" aria-describedby="basic-addon2" class="form-control">
+                </div>
+                <div class="input-group"><span id="basic-addon3" class="input-group-addon">Password</span>
+                  <input type="password" placeholder="e.g., ••••••••••••" aria-describedby="basic-addon3" class="form-control">
+                </div>
+                <!--.input-group
+                span.input-group-addon#basic-addon4 Retype Password
+                input.form-control(type="password", placeholder="e.g., ••••••••••••", aria-describedby="basic-addon4")
+                -->
+                <button type="button" class="btn primary full-width">Sign Up Now</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!--br--><span>OR</span><br><a class="btn-link facebook">Sign Up using Facebook</a>
           </div>
         </div>
       </div>

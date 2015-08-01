@@ -167,6 +167,15 @@ a {
 			text-decoration: none;
 			outline: none;
 		}
+		&.facebook {
+			color: #2E4DA7; //facebook color
+			&:hover {
+				color: lighten(#2E4DA7,10%);
+			}
+			&:active {
+				color: darken(#2E4DA7,10%);
+			}
+		}
 	}
 }
 //code highlighting

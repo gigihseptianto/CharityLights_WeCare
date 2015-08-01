@@ -8967,6 +8967,12 @@ a.btn-link {
     color: #FB4B5E;
     text-decoration: none;
     outline: none; }
+  a.btn-link.facebook {
+    color: #2E4DA7; }
+    a.btn-link.facebook:hover {
+      color: #3e62ca; }
+    a.btn-link.facebook:active {
+      color: #233b7f; }
 
 pre {
   background: #D8D8D8;
@@ -9345,6 +9351,9 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   border: none;
   text-align: center; }
 
+.modal-footer {
+  padding-top: 0px; }
+
 @media (min-width: 768px) {
   .modal-sm {
     width: 400px; } }
@@ -9391,6 +9400,15 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
     min-height: 50vh; }
     .jumbotron.header h1 {
       padding-top: 1em; }
+  .jumbotron.header-about {
+    background-color: rgba(61, 59, 71, 0.5);
+    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/Kids 2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #F7F5F5;
+    min-height: 80vh; }
+    .jumbotron.header-about h1 {
+      padding-top: 2.5em; }
   .jumbotron.how-it-works {
     background-color: #F2CE4D;
     min-height: 50vh; }
@@ -9400,6 +9418,18 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
       border-bottom: 2px solid #F7F5F5;
       padding-bottom: 1em; }
     .jumbotron.how-it-works p {
+      font-size: 114%;
+      font-weight: 400;
+      letter-spacing: 0px; }
+  .jumbotron.how-it-works-about {
+    background-color: #5BE394;
+    min-height: 50vh; }
+    .jumbotron.how-it-works-about h3 {
+      font-family: 'blogger_sansitalic', Fallback, sans-serif;
+      letter-spacing: 0.3px;
+      border-bottom: 2px solid #F7F5F5;
+      padding-bottom: 1em; }
+    .jumbotron.how-it-works-about p {
       font-size: 114%;
       font-weight: 400;
       letter-spacing: 0px; }
