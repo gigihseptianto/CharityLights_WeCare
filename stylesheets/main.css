@@ -9427,7 +9427,7 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
     .jumbotron.how-it-works-about h3 {
       font-family: 'blogger_sansitalic', Fallback, sans-serif;
       letter-spacing: 0.3px;
-      border-bottom: 2px solid #F7F5F5;
+      border-bottom: 2px solid #9CFFC5;
       padding-bottom: 1em; }
     .jumbotron.how-it-works-about p {
       font-size: 114%;
@@ -9608,6 +9608,44 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   min-width: 100%;
   padding-bottom: 100%;
   border-radius: 2px; }
+
+.team {
+  min-height: 80vh; }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.about-text {
+  font-size: 114% !important; }
+
+.team-container {
+  background-color: #428bca;
+  background-size: cover;
+  background-position: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding-bottom: 100%;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin-bottom: 1em; }
+
+.member-name {
+  font-family: "blogger_sansmedium_italic", Fallback, sans-serif;
+  background-color: #434B5B;
+  color: #F7F5F5;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 0.8em;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); }
 
 html {
   -ms-text-size-adjust: 100%;

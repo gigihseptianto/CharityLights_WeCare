@@ -20,38 +20,73 @@ html(lang="en")
       .container
         .col-md-12
           h2.section-title.text-center About CharityLights
-        .col-md-4
+        .col-xs-8.col-sm-6.col-md-5.col-lg-4.col-xs-offset-2.col-sm-offset-3.col-md-offset-0.col-lg-offset-0(style="margin-bottom:1em;")
           picture
-        .col-md-8
+            img(alt="charitylights", src="img/cl_tagline_image.png", width="100%", height="auto")
+        .col-xs-12.col-sm-12.col-md-7.col-lg-8
           include ./includes/poetry-ipsum.jade
     //Section About WeCare ID
     .jumbotron.about
           .container
             .col-md-12
               h2.section-title.text-center About WeCare ID
-            .col-md-4
-              picture
-            .col-md-8
+            .col-xs-12.col-sm-12.col-md-7.col-lg-8(style="margin-bottom:1em;")
               include ./includes/poetry-ipsum.jade
+            .col-xs-12.col-sm-12.col-md-5.col-lg-4
+              picture
+                img(alt="we care id", src="img/Kids 1.jpg", width="100%", height="auto")
     //Section how it works
     .jumbotron.how-it-works-about
       .container.text-center
-        h2.section-title How It Works
+        h2.section-title(style="padding-bottom:1em;") How It Works
         .col-md-3.col-sm-3.col-xs-12
-          img(alt="Donate", src="img/ic_donate_about@2x.png", height="114px")
+          img(alt="Donate", src="img/ic_donate_about@2x.png", height="113px")
           h3 Donate
         .col-md-3.col-sm-3.col-xs-12
-          img(alt="Approval", src="img/ic_approve@2x.png", height="114px")
+          img(alt="Confirmation", src="img/ic_approve_about@2x.png", height="113px")
           h3 Confirmation
         .col-md-3.col-sm-3.col-xs-12
-          img(alt="Donate", src="img/ic_donate@2x.png", height="114px")
+          img(alt="Get Updated", src="img/ic_update_about@2x.png", height="113px")
           h3 Get Updated
         .col-md-3.col-sm-3.col-xs-12
-          img(alt="Donate", src="img/ic_donate@2x.png", height="114px")
-          h3 Complete!
+          img(alt="Done", src="img/ic_finish_about@2x.png", height="113px")
+          h3 Done!
     //Section Team
     .jumbotron.team
       .container.text-center
-        h2.section-title The Team
+        h2.section-title(style="padding-bottom:1em;") The Team
+        //- row 1
+        .col-md-4.col-sm-6
+          p.member-name Gigih
+          .team-container.gigih(style="background-image: url('img/team/team_photo_gigih.jpg');")
+        .col-md-4.col-sm-6
+          p.member-name name 2
+          .team-container
+        .col-md-4.col-sm-6
+          p.member-name name 3
+          .team-container
+        //- row 2
+        .col-md-3.col-sm-6
+          p.member-name name 4
+          .team-container
+        .col-md-3.col-sm-6
+          p.member-name name 5
+          .team-container  
+        .col-md-3.col-sm-6
+          p.member-name name 6
+          .team-container            
+        .col-md-3.col-sm-6
+          p.member-name name 7
+          .team-container   
+        //- row 3
+        .col-md-4.col-sm-6
+          p.member-name name 8
+          .team-container
+        .col-md-4.col-sm-6
+          p.member-name name 9
+          .team-container
+        .col-md-4.col-sm-6
+          p.member-name name 10
+          .team-container
     //Section Footer
     include ./includes/footer.jade
