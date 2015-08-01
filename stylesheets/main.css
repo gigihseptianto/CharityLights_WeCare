@@ -9424,6 +9424,8 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
   .jumbotron.how-it-works-about {
     background-color: #5BE394;
     min-height: 50vh; }
+    .jumbotron.how-it-works-about .section-title {
+      padding-bottom: 1em; }
     .jumbotron.how-it-works-about h3 {
       font-family: 'blogger_sansitalic', Fallback, sans-serif;
       letter-spacing: 0.3px;
@@ -9611,6 +9613,8 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
 
 .team {
   min-height: 80vh; }
+  .team .section-title {
+    padding-bottom: 1em; }
 
 *, *:before, *:after {
   box-sizing: border-box;
