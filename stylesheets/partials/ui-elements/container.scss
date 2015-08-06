@@ -80,6 +80,27 @@
 			padding-top:1em;
 		}
 	}
+	//header-landing
+	&.header-landing{
+		background-color: rgba($black, .5);
+		background:
+		linear-gradient(
+			rgba($black, 0.45), 
+			rgba($black, 0.45)
+			),
+		url('../img/landing-bg.jpeg');
+		background-size: cover;
+		background-position: center; 
+		color: $cl-white;
+		min-height: 100vh;
+		h1 {
+			padding-top:1em;
+		}
+	.nav > li > a:hover, .nav > li > a:focus {
+	    text-decoration: none;
+	    background-color: rgba(#eee,0.3);
+	}
+	}
 	//header-about
 	&.header-about{
 		background-color: rgba($black, .5);

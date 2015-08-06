@@ -9400,6 +9400,18 @@ input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio])
     min-height: 50vh; }
     .jumbotron.header h1 {
       padding-top: 1em; }
+  .jumbotron.header-landing {
+    background-color: rgba(61, 59, 71, 0.5);
+    background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/landing-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #F7F5F5;
+    min-height: 100vh; }
+    .jumbotron.header-landing h1 {
+      padding-top: 1em; }
+    .jumbotron.header-landing .nav > li > a:hover, .jumbotron.header-landing .nav > li > a:focus {
+      text-decoration: none;
+      background-color: rgba(238, 238, 238, 0.3); }
   .jumbotron.header-about {
     background-color: rgba(61, 59, 71, 0.5);
     background: linear-gradient(rgba(61, 59, 71, 0.45), rgba(61, 59, 71, 0.45)), url("../img/Kids 2.jpg");

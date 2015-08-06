@@ -1,0 +1,31 @@
+doctype html
+html(lang="id")
+  head
+    - var pagetitle = "WeCare ID – Segera Hadir"
+    include ./includes/head.jade
+  body(style="padding-top:0px;")
+    //Navbar
+    //include ./includes/navbar.jade
+    //CONTENTS
+    //Section Title
+    .jumbotron.header-landing
+      .container.text-center
+        h3.section-title Segera Hadir
+        h1
+          span(style="font-family:'blogger_sanslight_italic', Fallback, sans-serif;") We
+          span(style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;") Care
+          |  ID
+        p Menuju Indonesia yang sehat, merata
+      .container.text-center
+        h4.section-title(style="margin-top:10em;display:block;") Dikembangkan Oleh
+        a(href="http://charitylights.org/", target="_blank", style="font-size:400%;font-size:1.5vmax;margin-bottom:0px;display:block;")
+          img(alt="CharityLights", src="img/logo_charitylights@2x.png", style="display:inline-block;vertical-align:middle;height:1.5vmax;margin-bottom:9px;")
+          span.cl-logo &nbsp;
+            span(style="font-family:'blogger_sanslight_italic', Fallback, sans-serif;") Charity
+            span(style="font-family:'blogger_sansmedium_italic', Fallback, sans-serif;") Lights
+        .row: .col-md-12.text-center
+          ul.contact-list.nav.nav-pills(style="display:inline-block;padding-top:0px;padding-bottom:1em;")
+            li: a(href="https://www.facebook.com/charitylightsid" target="_blank"): img(src="img/ic_contact_facebook_white.png" width="24px" height="24px")
+            li: a(href="https://twitter.com/charitylightsID" target="_blank"): img(src="img/ic_contact_twitter_white.png" width="24px" height="24px")
+            li: a(href="mailto:support@charitylights.org"): img(src="img/ic_contact_email_white.png" width="24px" height="24px")
+      
